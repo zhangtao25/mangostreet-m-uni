@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 
+import test from './pages/test/test'
+Vue.component('test',test)
+
 import basics from './pages/basics/home.vue'
 Vue.component('basics',basics)
 
@@ -22,7 +25,7 @@ const app = new Vue({
 })
 app.$mount()
 
- 
+
 
 
 
