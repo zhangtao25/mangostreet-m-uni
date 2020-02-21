@@ -136,8 +136,8 @@
 </script>
 
 <style>
-	@import "../../colorui/animation.css";
-	
+	@import "../../src/colorui/animation.css";
+
 	image[class*="gif-"] {
 		border-radius: 6upx;
 		display: block;

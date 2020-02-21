@@ -18,7 +18,7 @@
 					let custom = wx.getMenuButtonBoundingClientRect();
 					Vue.prototype.Custom = custom;
 					Vue.prototype.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
-					// #endif		
+					// #endif
 
 					// #ifdef MP-ALIPAY
 					Vue.prototype.StatusBar = e.statusBarHeight;
@@ -116,8 +116,8 @@
 </script>
 
 <style>
-	@import "colorui/main.css";
-	@import "colorui/icon.css";
+	@import "src/colorui/main.css";
+	@import "src/colorui/icon.css";
 
 	.nav-list {
 		display: flex;
