@@ -16,6 +16,9 @@ Vue.component('components',components)
 import plugin from './pages/plugin/home.vue'
 Vue.component('plugin',plugin)
 
+import my from './pages/my/my.vue'
+Vue.component('my',my)
+
 import cuCustom from './src/colorui/components/cu-custom.vue'
 Vue.component('cu-custom',cuCustom)
 

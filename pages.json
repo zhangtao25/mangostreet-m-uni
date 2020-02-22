@@ -112,6 +112,10 @@
     {
       "path": "pages/test/test",
       "style": {}
+    },
+    {
+      "path": "pages/my/my",
+      "style": {}
     }
   ],
   "globalStyle": {
