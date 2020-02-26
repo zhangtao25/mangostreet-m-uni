@@ -1,26 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 
-import store from './src/store/index.js'
-Vue.prototype.$store = store
+import Container from './src/components/Container'
 
-import test from './pages/test/test'
-Vue.component('test',test)
-
-import basics from './pages/basics/home.vue'
-Vue.component('basics',basics)
-
-import components from './pages/component/home.vue'
-Vue.component('components',components)
-
-import plugin from './pages/plugin/home.vue'
-Vue.component('plugin',plugin)
-
-import my from './pages/my/my.vue'
-Vue.component('my',my)
-
-import cuCustom from './src/colorui/components/cu-custom.vue'
-Vue.component('cu-custom',cuCustom)
+Vue.component('Container',Container)
 
 Vue.config.productionTip = false
 
@@ -30,8 +13,3 @@ const app = new Vue({
     ...App
 })
 app.$mount()
-
-
-
-
-
