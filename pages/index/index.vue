@@ -1,10 +1,10 @@
 <template>
   <container>
-    <home></home>
-    <mall></mall>
-    <msg></msg>
-    <my></my>
-    <bottom-nav/>
+    <home :style="{'display':pageCur===0?'block':'none'}"></home>
+    <mall :style="{'display':pageCur===1?'block':'none'}"></mall>
+    <msg :style="{'display':pageCur===3?'block':'none'}"></msg>
+    <my :style="{'display':pageCur===4?'block':'none'}"></my>
+    <bottom-nav @navTo="navTo"/>
   </container>
 </template>
 
@@ -25,14 +25,21 @@
     },
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+        pageCur: 0
 			}
 		},
 		onLoad() {
 
 		},
+    mounted(){
+      console.log(this.CustomBar)
+    },
 		methods: {
-
+      navTo(index){
+        this.pageCur = index
+        console.log(this.pageCur)
+      }
 		}
 	}
 </script>
