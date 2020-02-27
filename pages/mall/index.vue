@@ -1,9 +1,14 @@
 <template>
   <view>
-    mall
+    <header-nav :title="'商城'"/>
   </view>
 </template>
 
 <script>
-  export default {}
+  import HeaderNav from './../../src/components/HeaderNav'
+  export default {
+    components:{
+      HeaderNav
+    }
+  }
 </script>

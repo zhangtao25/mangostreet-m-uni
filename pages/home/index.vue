@@ -1,7 +1,14 @@
 <template>
   <view>
-    home
+    <header-nav :title="'事件'"/>
   </view>
 </template>
 
-<script></script>
+<script>
+  import HeaderNav from './../../src/components/HeaderNav'
+  export default {
+    components:{
+      HeaderNav
+    }
+  }
+</script>

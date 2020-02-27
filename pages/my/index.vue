@@ -1,14 +1,15 @@
 <template>
   <view>
-    <header-nav/>
+<!--    <header-nav :title="'我'"/>-->
+    <my-header-nav/>
   </view>
 </template>
 
 <script>
-  import HeaderNav from './../../src/components/HeaderNav'
+  import MyHeaderNav from './MyHeaderNav'
   export default {
     components:{
-      HeaderNav
+      MyHeaderNav
     }
   }
 </script>

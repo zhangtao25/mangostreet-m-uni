@@ -1,7 +1,14 @@
 <template>
   <view>
-    msg
+    <header-nav :title="'消息'"/>
   </view>
 </template>
 
-<script></script>
+<script>
+  import HeaderNav from './../../src/components/HeaderNav'
+  export default {
+    components:{
+      HeaderNav
+    }
+  }
+</script>

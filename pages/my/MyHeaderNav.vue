@@ -1,10 +1,12 @@
 <template>
   <view class="header-nav" :style="[{'height':CustomBar + 'px'}]">
     <view class="status-bar" :style="[{'height':StatusBar + 'px'}]"></view>
-
     <view class="wrap" :style="[{'height':(CustomBar-StatusBar) + 'px'}]">
       <view>x</view>
-      <text style="font-weight: bolder">{{title}}</text>
+      <view class="m">
+        <text>张涛</text>
+        <text>小红书号：905019230</text>
+      </view>
       <view></view>
     </view>
   </view>
@@ -32,6 +34,20 @@
       align-items: center;
       justify-content: space-between;
       border-bottom: 0.5px solid #e6e6e6;
+      .m{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text:nth-child(1){
+          font-size: 28rpx;
+          font-weight: bolder;
+        }
+        text:nth-child(2){
+          font-size: 20rpx;
+          color: #999;
+        }
+      }
     }
   }
 </style>
