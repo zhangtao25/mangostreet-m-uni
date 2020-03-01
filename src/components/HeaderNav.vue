@@ -4,7 +4,7 @@
 
     <view class="wrap" :style="[{'height':(CustomBar-StatusBar) + 'px'}]">
       <view>x</view>
-      <text style="font-weight: bolder">{{title}}</text>
+      <text style="font-weight: bolder;font-size: 32rpx">{{title}}</text>
       <view></view>
     </view>
   </view>

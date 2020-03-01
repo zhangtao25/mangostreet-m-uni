@@ -3,7 +3,7 @@
     <view class="list">
       <view v-for="(item,index) of navs" @click="onClickBottomNav(index)" class="item" :key="index">
         <text :class="{'actived':index === actived}" v-if="index!==2">{{item.name}}</text>
-        <image v-if="index ===2" style="width: 69rpx;height: 51rpx" src="/static/add.png"></image>
+        <image v-if="index ===2" style="width: 93rpx;height: 70rpx" src="/static/add.png"></image>
       </view>
     </view>
   </view>
@@ -18,10 +18,10 @@
         actived:0,
         navs:[
           {
-            name:'事件'
+            name:'首页'
           },
           {
-            name:'信息'
+            name:'商城'
           },
           {
             name:'事件'
@@ -50,6 +50,7 @@
       width: 100%;
       line-height: 100rpx;
       /*height: 100%;*/
+      z-index: 10000;
       position: fixed;
       bottom: 0;
       display: flex;

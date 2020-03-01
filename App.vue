@@ -6,6 +6,18 @@
 
       uni.getSystemInfo({
         success: function(e) {
+
+          console.log(e.model);
+          console.log(e.pixelRatio);
+          console.log(e.windowWidth);
+          console.log(e.windowHeight);
+          console.log(e.language);
+          console.log(e.version);
+          console.log(e.platform);
+
+          Vue.prototype.windowWidth = e.windowWidth
+
+
           // #ifndef MP
           Vue.prototype.StatusBar = e.statusBarHeight;
           if (e.platform == 'android') {
@@ -42,5 +54,8 @@
 	/*每个页面公共css */
   view{
     color: #333;
+  }
+  view{
+    font-size: 28rpx;
   }
 </style>
