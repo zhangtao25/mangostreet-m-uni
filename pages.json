@@ -5,19 +5,7 @@
       "style": {}
 		},
     {
-      "path": "pages/home/index",
-      "style": {}
-    },
-    {
-      "path": "pages/mall/index",
-      "style": {}
-    },
-    {
-      "path": "pages/msg/index",
-      "style": {}
-    },
-    {
-      "path": "pages/my/index",
+      "path": "pages/add/index",
       "style": {}
     }
     ],

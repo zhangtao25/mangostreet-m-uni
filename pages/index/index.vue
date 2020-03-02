@@ -34,7 +34,13 @@
     },
 		methods: {
       navTo(index){
-        this.pageCur = index
+        if (index === 2){
+          uni.navigateTo({
+            url: '/pages/add/index'
+          });
+          return
+        }
+        this.pageCur = index;
         console.log(this.pageCur)
       }
 		}
