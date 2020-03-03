@@ -1,12 +1,12 @@
 let serviceHostConfig = {
   // 在这里可以像在vue.config.js里配置代理一样配置，可以配置重写规则，域名地址
   // 注：target应为host地址+端口，不应该带路由
-  '/api/v1': {
-    target: 'http://192.168.0.101:8000',
+  '/api': {
+    target: 'http://localhost:8000',
     ws: false,
     changeOrigin: true,
     pathRewrite: {
-      '/api/v1': ''
+      '/api': ''
     }
   }
 }

@@ -51,6 +51,9 @@
 </script>
 
 <style>
+  /* #ifndef APP-PLUS-NVUE */
+  /* uni.css - 通用组件、模板样式库，可以当作一套ui库应用 */
+  @import './src/assets/css/uni.css';
 	/*每个页面公共css */
   view{
     color: #333;
